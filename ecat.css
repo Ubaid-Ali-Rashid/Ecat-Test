@@ -1,0 +1,84 @@
+div.header{
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* display: none; */
+}
+.h11{
+    font-family: Arial Rounded MT Bold;
+}
+.b1{
+    margin-top: 3rem;
+    width: 12rem;
+    height: 5rem;
+    font-size: 2rem;
+    background: rgb(84, 107, 241);
+    border: 1px solid rgb(84, 107, 241);
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.b1:hover{
+    transform: scale(1.2,1.2);
+    background: rgb(66, 92, 240);
+}
+
+
+
+
+
+
+.questions{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: aqua;
+    /* display: block; */
+}
+.h12{
+    text-decoration: underline;
+}
+hr{
+    height: 0.2rem;
+    background-color: black;
+    border: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 750px) {
+    .h11{
+        font-size: 1.8rem;
+    }
+    .h21{
+        font-size: 1.3rem;
+    }
+    .h12{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .h11{
+        font-size: 1.3rem;
+    }
+    .h21{
+        font-size: 1rem;
+    }
+}
