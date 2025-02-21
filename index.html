@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="uet_logo.png">
+    <title>Ecat Test</title>
+    <link rel="stylesheet" href="ecat.css">
+</head>
+<body>
+    <p id="output1"></p>
+    <div class="header">
+        <center>
+            <img src="uet_logo.png" alt="">
+            <h1 class="h11">
+                <strong>
+                    <u>
+                        University of Engineering and Technology
+                    </u>
+                </strong>
+            </h1>
+        </center>
+        <center>
+            <h2 class="h21">
+                There will be 10 questions in which each has worth "4" marks. Wrong <br><br>marks will cause negative marking "-1". <br><br>You can't skip any question. Solve wisely. Best of Luck.
+            </h2>
+            <button class="b1" onclick="remove()">Start Test</button>
+        </center>
+    </div>
+    <div class="questions">
+        <center><h1 class="h12">University of Engineering and Technology</h1></center><hr>
+        <div class="d1">
+            <h4>1) If A = <span style="font-size: 3rem;">[</span><span style="position: relative; top: -1rem; left: 0.5rem;">2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</span><span style="position: relative; top: 0.2rem; left: -2.5rem;">4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5</span><span style="font-size: 3rem; margin-left: -1.7rem;">]</span>, what is the determinant of matrix A?</h4>
+            <input id="i1" type="radio" name="option" value=".d1A" onclick="save_option('i1')"><label><strong>A) -2</strong></label><br><br><br>
+            <input id="i2" type="radio" name="option" value=".d1B" onclick="save_option('i2')"><label><strong>B) -3</strong></label><br><br><br>
+            <input id="i3" type="radio" name="option" value=".d1C" onclick="save_option('i3')"><label><strong>C) 7</strong></label><br><br><br>
+            <input id="i4" type="radio" name="option" value=".d1D" onclick="save_option('i4')"><label><strong>D) 10</strong></label><br><br><br>
+            <hr>
+            <center><button class="next" onclick="Save_Option()">Next</button></center>
+        </div>
+        <div class="d2">
+            <h4>2) The function f(x) = x<sup>3</sup> - 3x<sup>2</sup> +4 has critical point at x=2. What is the nature of this critical point?</h4>
+            <input id="i5" type="radio" name="option" value=".d2A" onclick="save_option('i5')"><label><strong>A) Local Maximum</strong></label><br><br><br>
+            <input id="i6" type="radio" name="option" value=".d2B" onclick="save_option('i6')"><label><strong>B) Local Minimum</strong></label><br><br><br>
+            <input id="i7" type="radio" name="option" value=".d2C" onclick="save_option('i7')"><label><strong>C) Saddle Point</strong></label><br><br><br>
+            <input id="i8" type="radio" name="option" value=".d2D" onclick="save_option('i8')"><label><strong>D) Cannot be determined</strong></label><br><br><br>
+            <hr>
+            <center><button class="next" onclick="Save_Option()">Next</button></center>
+        </div>
+        <div class="d3">
+            <h4>3) Choose the correct synonym for the word "Eloquent".</h4>
+            <input id="i9" type="radio" name="option" value=".d3A" onclick="save_option('i9')"><label><strong>A) Silent</strong></label><br><br><br>
+            <input id="i10" type="radio" name="option" value=".d3B" onclick="save_option('i10')"><label><strong>B) Fluent</strong></label><br><br><br>
+            <input id="i11" type="radio" name="option" value=".d3C" onclick="save_option('i11')"><label><strong>C) Confused</strong></label><br><br><br>
+            <input id="i12" type="radio" name="option" value=".d3D" onclick="save_option('i12')"><label><strong>D) Dull</strong></label><br><br><br>
+            <hr>
+            <center><button class="next" onclick="Save_Option()">Next</button></center>
+        </div>
+        <div class="d4">
+            <h4>4) Identify the sentence with correct grammar:</h4>
+            <input id="i13" type="radio" name="option" value=".d4A" onclick="save_option('i13')"><label><strong>A) If I was a bird, I will fly.</strong></label><br><br><br>
+            <input id="i14" type="radio" name="option" value=".d4B" onclick="save_option('i14')"><label><strong>B) If I were a bird, I would fly.</strong></label><br><br><br>
+            <input id="i15" type="radio" name="option" value=".d4C" onclick="save_option('i15')"><label><strong>C) If I were a bird, I will fly.</strong></label><br><br><br>
+            <input id="i16" type="radio" name="option" value=".d4D" onclick="save_option('i16')"><label><strong>D) If I was a bird, I would fly.</strong></label><br><br><br>
+            <hr>
+            <center><button class="next" onclick="Save_Option()">Next</button></center>
+        </div>
+        <div class="d5">
+            <h4>5) A ball is thrown vertically upward with a velocity of 20ms<sup>-1</sup>. What will be its velocity after 2 seconds?(Take g = 10 ms<sup>-2</sup>)</h4>
+            <input id="i17" type="radio" name="option" value=".d5A" onclick="save_option('i17')"><label><strong>A) 10 ms<sup>-1</sup></strong></label><br><br><br>
+            <input id="i18" type="radio" name="option" value=".d5B" onclick="save_option('i18')"><label><strong>B) 0 ms<sup>-1</sup></strong></label><br><br><br>
+            <input id="i19" type="radio" name="option" value=".d5C" onclick="save_option('i19')"><label><strong>C) -10 ms<sup>-1</sup></strong></label><br><br><br>
+            <input id="i20" type="radio" name="option" value=".d5D" onclick="save_option('i20')"><label><strong>D) -20 ms<sup>-1</sup></strong></label><br><br><br>
+            <hr>
+            <center><button class="next" onclick="Save_Option()">Next</button></center>
+        </div>
+        <div class="d6">
+            <h4>6) A circuit consists of a resistor, inductor, and capacitor in series. At resonance, which of the following is true?</h4>
+            <input id="i21" type="radio" name="option" value=".d6A" onclick="save_option('i21')"><label><strong>A) The impedance is maximum</strong></label><br><br><br>
+            <input id="i22" type="radio" name="option" value=".d6B" onclick="save_option('i22')"><label><strong>B) The current is minimum</strong></label><br><br><br>
+            <input id="i23" type="radio" name="option" value=".d6C" onclick="save_option('i23')"><label><strong>C) The power factor is 0</strong></label><br><br><br>
+            <input id="i24" type="radio" name="option" value=".d6D" onclick="save_option('i24')"><label><strong>D) The impedance is minimum</strong></label><br><br><br>
+            <hr>
+            <center><button class="next" onclick="Save_Option()">Next</button></center>
+        </div>
+        <div class="d7">
+            <h4>7) Which of the following addressing modes allows the operand to be specified indirectly using a register?</h4>
+            <input id="i25" type="radio" name="option" value=".d7A" onclick="save_option('i25')"><label><strong>A) Immediate Addressing</strong></label><br><br><br>
+            <input id="i26" type="radio" name="option" value=".d7B" onclick="save_option('i26')"><label><strong>B) Direct Addressing</strong></label><br><br><br>
+            <input id="i27" type="radio" name="option" value=".d7C" onclick="save_option('i27')"><label><strong>C) Indirect Addressing</strong></label><br><br><br>
+            <input id="i28" type="radio" name="option" value=".d7D" onclick="save_option('i28')"><label><strong>D) Indexed Addressing</strong></label><br><br><br>
+            <hr>
+            <center><button class="next" onclick="Save_Option()">Next</button></center>
+        </div>
+        <div class="d8">
+            <h4>8) What is the time complexity of the binary search algorithm in the worst case scenario?</h4>
+            <input id="i29" type="radio" name="option" value=".d8A" onclick="save_option('i29')"><label><strong>A) O(1)</strong></label><br><br><br>
+            <input id="i30" type="radio" name="option" value=".d8B" onclick="save_option('i30')"><label><strong>B) O(n)</strong></label><br><br><br>
+            <input id="i31" type="radio" name="option" value=".d8C" onclick="save_option('i31')"><label><strong>C) O(log n)</strong></label><br><br><br>
+            <input id="i32" type="radio" name="option" value=".d8D" onclick="save_option('i32')"><label><strong>D) O(n^2)</strong></label><br><br><br>
+            <hr>
+            <center><button class="next" onclick="Save_Option()">Next</button></center>
+        </div>
+        <div class="d9">
+            <h4>9) Which of the following sorting algorithms has the worst-case time complexity of 0(n log n)?</h4>
+            <input id="i33" type="radio" name="option" value=".d9A" onclick="save_option('i33')"><label><strong>A) Bubble Sort</strong></label><br><br><br>
+            <input id="i34" type="radio" name="option" value=".d9B" onclick="save_option('i34')"><label><strong>B) Quick Sort</strong></label><br><br><br>
+            <input id="i35" type="radio" name="option" value=".d9C" onclick="save_option('i35')"><label><strong>C) Selection Sort</strong></label><br><br><br>
+            <input id="i36" type="radio" name="option" value=".d9D" onclick="save_option('i36')"><label><strong>D) Insertion Sort</strong></label><br><br><br>
+            <hr>
+            <center><button class="next" onclick="Save_Option()">Next</button></center>
+        </div>
+        <div class="d10">
+            <h4>10) In object-oriented programming, what is the main purpose of polymorphism?</h4>
+            <input id="i37" type="radio" name="option" value=".d10A" onclick="save_option('i37')"><label><strong>A) To create multiple objects</strong></label><br><br><br>
+            <input id="i38" type="radio" name="option" value=".d10B" onclick="save_option('i38')"><label><strong>B) To use the same function name for different functionalities</strong></label><br><br><br>
+            <input id="i39" type="radio" name="option" value=".d10C" onclick="save_option('i39')"><label><strong>C) To store different data types in a single variable</strong></label><br><br><br>
+            <input id="i40" type="radio" name="option" value=".d10D" onclick="save_option('i40')"><label><strong>D) To declare multiple variables of the same type</strong></label><br><br><br>
+            <hr>
+            <center><input type="button" value="Submit" onclick="Save_Option()" class="submit"></center>
+        </div>
+    </div>
+    <div class="result">
+        <center>
+            <h1 class="h12"><u>University of Engineering and Technology</u></h1>
+        </center><hr>
+        <center>
+            <h1 id="output"></h1>
+        </center>
+    </div>
+
+
+    <script src="jquerycom.js"></script>
+    <script src="ecat.js"></script>
+</body>
+</html>
